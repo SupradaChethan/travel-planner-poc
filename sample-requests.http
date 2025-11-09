@@ -1,0 +1,48 @@
+### Health Check
+GET http://localhost:8080/api/travel/health
+
+### Generate Travel Plan for Paris
+POST http://localhost:8080/api/travel/plan
+Content-Type: application/json
+
+{
+  "destination": "Paris",
+  "numberOfDays": 3,
+  "interests": "culture, food, art",
+  "budget": "moderate",
+  "travelStyle": "balanced"
+}
+
+### Generate Travel Plan for Tokyo
+POST http://localhost:8080/api/travel/plan
+Content-Type: application/json
+
+{
+  "destination": "Tokyo",
+  "numberOfDays": 5,
+  "interests": "technology, food, traditional culture",
+  "budget": "luxury",
+  "travelStyle": "packed"
+}
+
+### Get Travel Tips for Barcelona
+GET http://localhost:8080/api/travel/tips/Barcelona
+
+### Get Travel Tips for New York
+GET http://localhost:8080/api/travel/tips/New York
+
+### Suggest Beach Destinations
+POST http://localhost:8080/api/travel/suggest
+Content-Type: application/json
+
+{
+  "preferences": "beaches, warm weather, good food, budget-friendly"
+}
+
+### Suggest Adventure Destinations
+POST http://localhost:8080/api/travel/suggest
+Content-Type: application/json
+
+{
+  "preferences": "mountains, hiking, nature, adventure, wildlife"
+}
